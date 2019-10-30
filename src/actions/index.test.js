@@ -1,9 +1,11 @@
 import { addTodo } from './index';
 
 it('should create a new todo', () => {
-  const todoText = 'newTodo';
+  const stubText = 'newTodo';
 
-  const todoType = addTodo(todoText).type;
+  const action = addTodo(stubText);
 
-  expect(todoType).toEqual('ADD_TODO');
+  expect(action.type).toEqual('ADD_TODO');
+  expect(action.id).toEqual(0);
+  expect(action.text).toEqual(stubText);
 });
