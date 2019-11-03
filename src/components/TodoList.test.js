@@ -29,7 +29,7 @@ describe('TodoList component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should call toggleTodo with the right id when Todo clicked', () => {
+  it('should call toggleTodo when Todo clicked', () => {
     wrapper.find('Todo').simulate('click');
 
     expect(mockToggleTodo).toHaveBeenCalled();
