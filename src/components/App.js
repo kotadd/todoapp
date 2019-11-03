@@ -7,7 +7,7 @@ const App = () => (
   <>
     <AddTodo />
     <VisibleTodoList />
-    {/* <Footer /> */}
+    <Footer />
   </>
 );
 
